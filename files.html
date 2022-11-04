@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/970a0290cd.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Files</title>
+<style type="text/css">* {font-family: Inter; font-size: 15px; padding: 0; margin: 0;}
+.load {padding: 5px; background: #1d1d1ddd; color: white;} .file {padding: 10px; box-sizing: border-box;}
+</style>
+<link rel="stylesheet" type="text/css" href="scroll.css">
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+
+<script type="text/javascript" src="https://rawgit.com/onokumus/metisMenu/master/dist/metisMenu.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://rawgit.com/onokumus/metisMenu/master/dist/metisMenu.min.css">
+
+<script type="text/javascript">
+  $(function() {
+  $('#menu').metisMenu({
+    toggle: true // disable the auto collapse. Default: true.
+  });
+});
+
+  $(function() {
+  $('#menu2').metisMenu({
+    toggle: true // disable the auto collapse. Default: true.
+  });
+});
+</script>
+</head>
+<body style="background:white;">
+
+<div class="file" style="background: white;">
+  <h3>Drives</h3>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-6">
+      <aside class="sidebar">
+        <nav class="sidebar-nav">
+          <ul class="metismenu" id="menu">
+            <li>
+              <a href="#" aria-expanded="false">System <i class="fa-solid fa-hard-drive"></i><span class="glyphicon arrow"></span></a>
+              <ul aria-expanded="false">
+                <li><a href="index.html">Index.html <i class="fa-solid fa-file-code"></i></a></li>
+                <li><a href="kaostest.html">Kaostest.html <i class="fa-solid fa-file-code"></i></a></li>
+                <li><a href="style.css">style.css <i class="fa-solid fa-file-code"></i></a></li>
+                <li><a href="MEDIA.html">MEDIA.html <i class="fa-solid fa-file-code"></i></a></li>
+                <li><a href="close.js">close.js <i class="fa-solid fa-file-code"></i></a></li>
+                <li><a href="costume2.png">costume2.png <i class="fa-solid fa-image"></i></a></li>
+                <li><a href="ver.png">ver.png <i class="fa-solid fa-image"></i></a></li>
+                <li>
+                  <a href="#" aria-expanded="false">Icons <span class="glyphicon arrow"></span></a>
+                  <ul aria-expanded="false">
+                    <li><a href="Icons/filesicon.png">filesicon.png <i class="fa-solid fa-image"></i></a></li>
+                    <li><a href="Icons/mememaker.png">mememaker.png <i class="fa-solid fa-image"></i></a></li>
+                    <li><a href="Icons/Store.png">Store.png <i class="fa-solid fa-image"></i></a></li>
+                    <li><a href="Icons/media.png">media.png <i class="fa-solid fa-image"></i></a></li>
+                  </ul>
+                </li>
+                <li><a href="ver.png">Logo.png <i class="fa-solid fa-image"></i></a></li>
+                <li>
+                  <a href="#" aria-expanded="false">Media <span class="glyphicon arrow"></span></a>
+                  <ul aria-expanded="false">
+                    <li><a href="medias/sigma.mp3">Sigma.Mp3 <i class="fa-solid fa-music"></i></a></li>
+                    <li><a href="medias/memeforest.wav">Memeforest.wav <i class="fa-solid fa-music"></i></a></li>
+                    <li><a href="medias/bdp.mp4">BDP.mp4 <i class="fa-solid fa-film"></i></a></li>
+                    <li><a href="medias/Morshu.mp4">Morshu.mp4 <i class="fa-solid fa-film"></i></a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+    </div>
+  </div>
+</div>
+  <h3>Removable Drives</h3>
+<div class="row">
+    <div class="col-xs-6">
+      <aside class="sidebar">
+        <nav class="sidebar-nav">
+          <ul class="metismenu" id="menu2">
+            <li>
+              <a href="#" aria-expanded="false">KaOS Installer <i class="fa-solid fa-screwdriver-wrench"></i><span class="glyphicon arrow"></span></a>
+              <ul aria-expanded="false">
+                <li><a href="setup/index.html">Installer.html <i class="fa-solid fa-file-code"></i></a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+    </div>
+  </div>
+  <h3>Network Drives</h3>
+<div class="row">
+    <div class="col-xs-6">
+      <aside class="sidebar">
+        <nav class="sidebar-nav">
+          <ul class="metismenu" id="menu">
+            <li>
+              <a onclick="denied()" href="#" aria-expanded="false">User2 <i class="fa-solid fa-network-wired"></i><span class="glyphicon arrow"></span></a>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+    </div>
+</div>
+
+
+</body>
+<script type="text/javascript">
+ function denied(){
+  window.alert("Access Denied!");
+ }
+</script>
+</html>
