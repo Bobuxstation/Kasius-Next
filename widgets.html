@@ -1,0 +1,46 @@
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="scroll.css">
+<script type="text/javascript" src="time.js" defer></script>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: Inter;
+    overflow-x: hidden;
+}
+.clock {
+    background: #ADD8E690;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}.clock2 {
+    border-radius: 5px;
+    color: white;
+    height: 300px;
+    margin: 10px;
+    border: white solid 1px;
+}
+</style>
+</head>
+<body id="body">
+
+    <div class="clock">
+        <h1 id="span"></h1>
+        <br>
+        <p id="demo"></p>
+    </div>
+
+    <div class="clock2">
+        <iframe style="border: none; height: 100%; width: 100%;" src="widgets/weather/index.html"></iframe>
+    </div>
+
+</body>
+<script type="text/javascript">
+let date = new Date();
+document.getElementById("demo").innerHTML = date;
+</script>
+</html>

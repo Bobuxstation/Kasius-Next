@@ -1,0 +1,508 @@
+body {
+  font-family: Inter !important;
+  background-image: url("bg.jpg");
+  overflow: hidden;
+  background-size: cover;
+  transition: all 0.2s ease;
+}
+footer {
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #1d1d1ddd;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  backdrop-filter: blur(10px);
+  text-align: center;
+  position:fixed!important;
+  z-index:3;
+  border: #2d2d2d solid 1px;
+  border-width: 1px 0px 0px 0px;
+}
+.window {
+    height: 0px;
+    width: 0px;
+    display: none;
+    animation: fadein;
+    animation-duration: 0.25s;
+}
+.header {
+   width: 600px;
+   height: 30px;
+   background-color: #1d1d1ddd;
+   cursor: move;
+   border-radius: 5px 5px 0px 0px;
+   overflow: auto;
+   backdrop-filter: blur(10px);
+  
+}
+.content {
+   width: 600px;
+   margin: 0;
+   padding: 0;
+   height: 450px;
+   border-radius: 0px 0px 5px 5px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.headertext {
+    color: white;
+    background: none;
+    height: 23.5px;
+    border: black solid 0px;
+    border-radius: 5px;
+    font-size: 17.5px;
+  margin: 3px;
+  margin-right: 0px;
+  transition: all 0.2s ease;
+}
+.headertext:hover {
+  color: white;
+  background: #4d4d4d90;
+  height: 23.5px;
+  border: black solid 0px;
+  border-radius: 5px;
+  font-size: 17.5px;
+margin: 3px;
+margin-right: 0px;
+transition: all 0.2s ease;
+}
+.closebutton {
+    float: right;
+    color: white;
+    background: darkred;
+    height: 23.5px;
+    width: 23.5px;;
+    border: black solid 0px;
+    border-radius: 5px;
+    font-size: 18px;
+  margin: 3px;
+  transition: all 0.2s ease;
+  
+}
+.closebutton:hover{
+    background-color: red;
+    border: black solid 0px;
+    transition: all 0.2s ease;
+}
+.closebutton:active {
+  background-color: darkred;
+  transition: all 0.2s ease;
+}
+.menubutton {
+    background-color: #2d2d2d00;
+    border: black solid 0px;
+    color: black;
+    float: left;
+    background-image:url("");
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    padding: 4px;
+    margin: 5px;
+    transition: all 0.2s ease;
+}
+li {
+    float: left;
+    display: block;
+}
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    transition: all 0.2s ease;
+}
+
+nav{
+    display: inline-block;
+}
+#span {
+    font-size: 75px;
+    color: black;
+    text-align: center;
+}
+.applist {
+    background-color: #1d1d1dbb;
+    color: white;
+    border-radius: 5px 0px 0px 0px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.sidebar{
+    height:16.6%;
+}
+.search {
+    bottom: 0;
+    width: 100%;
+    background-color: #1d1d1d66;
+    padding: 3px;
+    box-sizing: border-box;
+  border-radius: 2px;
+  color: white;
+}
+.search2 {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #4dc0ed66;
+    padding: 3px;
+    color: white;
+    border-radius: 2px;
+}
+.sidebar2 {
+    height: 517.45px;
+    width:600px;
+    position:fixed!important;
+    z-index:2;
+    overflow:auto;
+    padding: 2.5px;
+    background-color: #1d1d1ddd;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+    bottom: 0;
+    margin-bottom: 45px;
+    animation: slideup;
+    margin-left:5px;
+    animation-duration: 0.25s;
+    border: #2d2d2d solid 1px;
+}
+.menubutton2 {
+    background: none;
+    border: black solid 0px;
+    font-family: Inter;
+    color: white;
+    float: left;
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+button {
+    padding: 2px;
+  }
+.notifications {
+    height: fit-content;
+    width:300px;
+    position:fixed!important;
+    z-index:2;
+    padding: 5px;
+    background-color: #1d1d1ddd;
+    color: white;
+    right:0;
+    bottom: 0;
+    display: none;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+    animation: slideright;
+    animation-duration: 0.25s;
+    margin-bottom: 45px;
+    transition: all 0.2s ease;
+    overflow: auto;
+    border: #2d2d2d solid 1px;
+    margin-right:5px;
+}
+.list {
+    width: 60%;
+    margin: auto;
+}
+  .minimize {
+        float: right;
+    color: white;
+    background: NONE;
+    height: 23.5px;
+    width: 23.5px;;
+    border: black solid 0px;
+    border-radius: 5px;
+    font-size: 14px;
+  margin: 3px;
+  transition: all 0.2s ease;
+}
+.minimize:hover{
+    background-color: red;
+    border: black solid 0px;
+    transition: all 0.2s ease;
+}
+.minimize:active {
+  background-color: darkred;
+  transition: all 0.2s ease;
+}
+  .menubuttonminimized {
+    background-color: #8d8d8d80;
+    border: black solid 0px;
+    color: black;
+    float: left;
+    padding: 4px !important;
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+    transition: all 0.2s ease;
+    border-radius: 5px;
+}
+.menubutton2:hover {
+  background-color: #4d4d4d66;
+  transition: all 0.2s ease;
+}
+.menubutton2:active {
+  background-color: #6d6d6d66;
+  cursor: progress;
+  transition: all 0.2s ease;
+}
+.menubutton:hover {
+  background-color: #4d4d4d40;
+  transition: all 0.2s ease;
+}
+.menubutton:active {
+  background-color: #6d6d6d66;
+  cursor: progress;
+  transition: all 0.2s ease;
+}
+.notification {
+  background-color: #4d4d4d;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+fieldset {
+  border-radius: 5px;
+  padding: 5px;
+}
+#menutogglebutton {
+    font-size: 22px;
+    color: white;
+}
+.settingssidebar {
+  backdrop-filter: blur(10px);
+  background-color: #1d1d1ddd;
+  color: white;
+}
+.Settings {
+   backdrop-filter: blur(10px);
+}
+button {
+   background: lightgray;
+   border:#767676 solid 1px;
+   border-radius: 2.5px;
+   transition: all 0.2s ease;
+}
+.settings button {
+    padding:5px;
+}
+.kaosbutton {
+   background: none;
+   border:none;
+   border-radius: 2.5px;
+   transition: all 0.2s ease;
+  padding:10px;
+  color: white;
+  font-size: 16px
+}
+.Settings button:hover {
+   background: rgb(192, 192, 192);
+   border:#767676 solid 1px;
+   border-radius: 2.5px;
+   transition: all 0.2s ease;
+}
+.kaosbutton:hover {
+  background: #4d4d4d90;
+  border:none;
+  border-radius: 2.5px;
+  transition: all 0.2s ease;
+}
+.Settings button:active {
+   background: gray;
+   border:#1d1d1d solid 1px;
+   border-radius: 2.5px;
+   transition: all 0.2s ease;
+}
+.kaosbutton:active {
+  background: #4d4d4d;
+  border:none;
+  border-radius: 2.5px;
+  transition: all 0.2s ease;
+}
+.Settings input {
+   background: lightgray;
+   border:#767676 solid 1px;
+   border-radius: 2.5px;
+   padding: 2px;
+   transition: all 0.2s ease;
+    padding:5px;
+}
+input {
+  background: lightgray;
+  border:#767676 solid 1px;
+  border-radius: 2.5px;
+  padding: 2px;
+  transition: all 0.2s ease;
+}
+.Settings input:focus {
+   background: white;
+   border:#767676 solid 1px;
+   border-radius: 2.5px;
+   transition: all 0.2s ease;
+  outline: none;
+}
+.menubuttonminimized:hover {
+      background-color: #9d9d9d20;
+      transition: all 0.2s ease;
+}
+.menubuttonminimized:active {
+  background-color: #6d6d6d66;
+  transition: all 0.2s ease;
+}
+textarea {
+  padding: 5px;
+  font-family: Inter;
+  font-size: 20px;
+}
+.search i {
+  color: lightgray;
+}
+.search button,input {
+  border-radius: 2px !important;
+}
+.search input {
+  background-color: lightgray;
+}
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes slideright {
+    0% {
+          transform: translateX(50%);
+    }
+    100% {
+          transform: translateX(0%);
+    }
+}
+@keyframes slideup {
+    0% {
+          transform: translateY(25%);
+    }
+    100% {
+          transform: translateY(0%);
+    }
+}
+#msg {
+  background: lightgray;
+}
+#errorbox {
+  position:fixed!important;
+  z-index:2;
+  height: 100%;
+  width: 100%;
+  background: none;
+  backdrop-filter: blur(10px);
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  display:none;
+  animation: fadein;
+  animation-duration: 0.25s;
+}
+#errormessage {
+  text-align: center;
+  background-color: #1d1d1ddd;
+  border: #2d2d2d solid 1px;
+  color:white;
+  border-radius: 5px;
+  padding: 5px;
+}
+#errormessage button {
+  width: 100%;
+  height:30px;
+  margin-bottom: 5px;
+  background: lightgray;
+  border:#767676 solid 1px;
+  border-radius: 2.5px;
+  transition: all 0.2s ease;
+}
+#errormessage button:hover {
+  background: gray;
+  border:#767676 solid 1px;
+  border-radius: 2.5px;
+  transition: all 0.2s ease;
+}
+#errormessage button:active {
+  background: lightgray;
+  border:#767676 solid 1px;
+  border-radius: 2.5px;
+  transition: all 0.2s ease;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-button {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px none #ffffff;
+  border-radius: 41px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #ffffff;
+}
+::-webkit-scrollbar-track {
+  background: #1d1d1d;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #1d1d1d;
+}
+::-webkit-scrollbar-track:active {
+  background: #1d1d1d;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+.noteinput {
+  background: none;
+  border: none;
+  color: white;
+  font-family: inter;
+}
+.noteinput:focus {
+  background: lightgray;
+  border: none;
+  color: black;
+  outline: none;
+}
+#notessaveprompt1 input {
+  background: none;
+  border: none;
+  color: white;
+  font-family: inter;
+}
+#notessaveprompt1 input:focus {
+  background: lightgray;
+  border: none;
+  color: white;
+  font-family: inter;
+  outline: none;
+}
+#notessaveprompt1 select {
+  background: none !important;
+  border: none;
+  color: white;
+  font-family: inter;
+}
+#notessaveprompt1 select:focus {
+  background: lightgray !important;
+  border: none;
+  color: black;
+  font-family: inter;
+  outline: none;
+}

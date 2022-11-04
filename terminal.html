@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *{
+    font-family: Inter !important;
+    font-size: 12.5px !important;
+  }
+</style>
+</head>
+<body>
+</body>
+<script>
+$('body').terminal({
+  hello: function(name) {
+    this.echo('Hello, ' + name +
+      '. Welcome To The KaOS Terminal 1.0.');
+  },
+  add: function(num1, num2) {
+    this.echo(parseInt(num1) + parseInt(num2));
+  },
+  substract: function(num1, num2) {
+    this.echo(parseInt(num1) - parseInt(num2));
+  },
+  multiply: function(num1, num2) {
+    this.echo(parseInt(num1) * parseInt(num2));
+  },
+  divide: function(num1, num2) {
+    this.echo(parseInt(num1) / parseInt(num2));
+  },
+  epik: function() {
+    this.echo('drip');
+  },
+  hutao: function(flags, cmd, package) {
+    if (cmd === '') {
+      this.echo('Hu Tao Package Manager (beta)');
+      this.echo('Usage: hutao [flags] [command] [package]');
+      this.echo('Commands:');
+      this.echo('install');
+      this.echo('remove');
+      this.echo('update');
+      this.echo('search');
+      this.echo('list');
+      this.echo('info');
+      this.echo('help');
+      this.echo('exit');
+      this.echo('Flags:');
+      this.echo('-h, --help');
+      this.echo('-v, --version');
+      this.echo('-d, --debug');
+      this.echo('-s, --silent');
+      this.echo('-q, --quiet');
+      this.echo('-f, --force');
+      this.echo('-y, --yes');
+      this.echo('-n, --no');
+      this.echo('-c, --config');
+      this.echo('-p, --package');
+      this.echo('-i, --ignore');
+      this.echo('-l, --log');
+      this.echo('-t, --test');
+      this.echo('-m, --mirror');
+      this.echo('-u, --update');
+      this.echo('-r, --repository');
+      this.echo('-a, --arch');
+    }
+    if (flags === '-h' || flags === '--help') {
+      this.echo('Hu Tao Package Manager (beta)');
+      this.echo('Usage: hutao [flags] [command] [package]');
+      this.echo('Commands:');
+      this.echo('install');
+      this.echo('remove');
+      this.echo('update');
+      this.echo('search');
+      this.echo('list');
+      this.echo('info');
+      this.echo('help');
+      this.echo('exit');
+      this.echo('Flags:');
+      this.echo('-h, --help');
+      this.echo('-v, --version');
+      this.echo('-d, --debug');
+      this.echo('-s, --silent');
+      this.echo('-q, --quiet');
+      this.echo('-f, --force');
+      this.echo('-y, --yes');
+      this.echo('-n, --no');
+      this.echo('-c, --config');
+      this.echo('-p, --package');
+      this.echo('-i, --ignore');
+      this.echo('-l, --log');
+      this.echo('-t, --test');
+      this.echo('-m, --mirror');
+      this.echo('-u, --update');
+      this.echo('-r, --repository');
+      this.echo('-a, --arch');
+    } else if (flags === '-v' || flags === '--version') {
+      this.echo('Hu Tao Package Manager (beta)');
+      this.echo('Version: 1.0.0');
+      this.echo('Author: zeankun.dev');
+      this.echo('License: GPLv3');
+    } else if (cmd === 'install') {
+      this.echo('Installing ' + package);
+    } else if (cmd === 'remove') {
+      this.echo('Removing ' + package);
+    } else if (cmd === 'update') {
+      this.echo('Updating ' + package);
+    } else if (cmd === 'search') {
+      this.echo('Searching ' + package);
+    } else if (cmd === 'list') {
+      this.echo('Listing ' + package);
+    } else if (cmd === 'info') {
+      this.echo('Getting info for ' + package);
+    } else if (cmd === 'help') {
+      this.echo('Getting help for ' + package);
+    } else if (cmd === 'exit') {
+      this.echo('Exiting');
+    } else {
+      this.echo('Unknown command: ' + cmd);
+    } 
+  },
+  sudo: function(cmd) {
+    if (cmd === 'ls') {
+      this.echo('/bin/ls');
+    } else if (cmd === 'cat /etc/passwd') {
+      this.echo('root:x:0:0:root:/root:/bin/bash');
+    } else if (cmd === '--help') {
+      this.echo('Usage: sudo [cmd]. \nTry \'sudo ls\'. \nOther commands such as \'sudo cat /etc/passwd\'. \nFun commands: [hub,--version,--license,--copyright,--author,--email,--website,--discord,--github,--twitter,--youtube] \nYou have to type the whole command. \nIf a command has a spaces, you must put quote marks!!! \nsudo.js is a terminal emulator. \nYou can add \'--help\' to see the commands. (c) 2022 zeankun.dev');
+    } else if (cmd === 'hub') {
+      this.echo('hub.dev');
+    } else if (cmd === '--version') {
+      this.echo('OSRELKaOS1.0.0_R6392322936_D7293828329_S29613729');
+    } else if (cmd === '--license') {
+      this.echo('GPL-3 License');
+    }
+  },
+  ping: function(name) {
+    this.echo('Pinged ' + name + ' In 69ms' );
+    this.echo('Pinged ' + name + ' In 42ms' );
+    this.echo('Pinged ' + name + ' In 76ms' );
+    this.echo('Pinged ' + name + ' In 15ms' );
+    this.echo('Pinged ' + name + ' In 95ms' );
+    this.echo('Succesfully pinged ' + name + ' 5 Times!' );
+  },
+  hack: function(name) {
+    this.echo('Hacked Server 1 Of ' + name );
+    this.echo('Hacked Server 2 Of ' + name );
+    this.echo('Hacked Server 3 Of ' + name );
+    this.echo('Hacked Server 4 Of ' + name );
+    this.echo('Hacked Server 5 Of ' + name );
+    this.echo('' );
+    this.echo('Access Granted!' );
+  },
+  about: function() {
+    this.echo('KaOS 14 Html Terminal');
+    this.echo('Version 1.0');
+    this.echo('(C) 2022 zeankun.dev & Bobuxstation');
+  },
+}, {
+  greetings: 'Kasius Next Terminal 1.0'
+});
+</script>
+</html>
