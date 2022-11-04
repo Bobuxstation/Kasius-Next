@@ -1,0 +1,206 @@
+<html>
+    <head>
+        <script src="fontawesome.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Inter;
+            user-select: none;
+        }
+input[type='file'] {
+font-size: 0; 
+padding: 0px;
+}
+.div {
+    text-align: left;
+    background: none;
+    padding: 0;
+    height: 23px;
+}
+#samplevid {
+    width: 87.5%;
+    padding: 10px;
+}
+::file-selector-button { 
+color: white;
+font-size: initial;
+font-family: Inter;
+background: none; 
+border: none;
+float: left; 
+margin: 0;
+padding: 0;
+}
+.menubutton {
+ font-size: inter;
+ color: white;
+ background: none; 
+ border: none; 
+ height: 23px; 
+ border-radius: 0px; 
+ float: left; 
+ width: 125px; 
+ padding: 0;
+}
+.menubutton:hover {
+    background-color: #1d1d1d;
+}
+.content {
+    width: 600px;
+    height: 427px;
+    float: right;
+    background: white;
+}
+.presetmedia {
+    width: 200px;
+    height: 100vh;
+    position:fixed!important;
+    z-index:2;
+    float: left;
+    overflow: auto;
+    background-color: #1d1d1ddd;
+    backdrop-filter: blur(10px);
+    color: white;
+}
+.presetmedia button {
+    border: none;
+    background: none;
+    color: white;
+    padding: 5px;
+    text-align: left;
+    width: 100%;
+    transition: all 0.2s ease;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+.presetmedia button:hover {
+    border: none;
+    background: #4d4d4d90;
+    color: white;
+    padding: 5px;
+    text-align: left;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+}
+.presetmedia button:active {
+    border: none;
+    background: #4d4d4d;
+    color: white;
+    padding: 5px;
+    text-align: left;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+}
+input {
+  background: none;
+  border:none;
+  border-radius: 2.5px;
+  padding: 2px;
+  transition: all 0.2s ease;
+  color: white;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-button {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px none #ffffff;
+  border-radius: 41px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #ffffff;
+}
+::-webkit-scrollbar-track {
+  background: #1d1d1d;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #1d1d1d;
+}
+::-webkit-scrollbar-track:active {
+  background: #1d1d1d;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+summary {
+    font-weight: bold;
+}
+        </style>
+    </head>
+    <body id="body">
+        <section>
+        <div class="div">
+        <div class="content">
+        <video src="" id="mediavid" controls style=" border: black solid 0px; width: 100%; height: 100vh; background-color: black;"></video></div>
+           
+        <div class="presetmedia"> 
+        <div id="samplevid">
+        <details>
+        <summary style="margin-bottom: 5px;"><i class="fa-solid fa-film"></i> My Medias</summary>
+            <button id="left">
+                <input type="file" accept="video/*" onchange="custom_video(event)">
+            </button><br>
+            <button onclick="loadlink()" id="left">Stream</button><br>
+        </details>
+        <details>
+        <summary style="margin-bottom: 5px;"><i class="fa-solid fa-photo-film"></i> Preset Medias</summary>
+            <button onclick="vid1()">Morshu RTX Finds Diamond.MP4</button><br>
+            <button onclick="vid2()">Sigma.MP3</button><br>
+            <button onclick="vid3()">BDP SMP SEASON 1 TOUR.MP4</button><br>
+            <button onclick="vid4()">Morning Bells - Meme Forest OST.WAV</button><br>
+        </details>
+        <details>
+        <summary style="margin-bottom: 5px;"><i class="fa-solid fa-tower-broadcast"></i> Watch Online</summary>
+            <button onclick="vid5()">Lookeloo</button><br>
+            <button onclick="vid6()">YouSul</button><br>
+            <button onclick="vid7()">ABflix</button><br>
+        </details>
+        </div>
+    </body>
+    <script>
+function vid1() {
+   var video = document.getElementById("mediavid"); video.src = ("medias/Morshu.mp4");
+}
+function vid2() {
+   var video = document.getElementById("mediavid"); video.src = ("medias/sigma.mp3");
+}
+function vid3() {
+   var video = document.getElementById("mediavid"); video.src = ("medias/bdp.mp4");
+}
+function vid4() {
+   var video = document.getElementById("mediavid"); video.src = ("medias/memeforest.wav");
+}
+function vid5() {
+   window.location.replace("https://lookeeloo-vid.web.app/");
+}
+function vid6() {
+   window.location.replace("https://zeanfender11.wixsite.com/yousul");
+}
+function vid7() {
+   window.location.replace("https://ABflix-beta.web.app");
+}
+function custom_video(event) {
+   var reader = new FileReader();
+   reader.onload = function() {
+      var video = document.getElementById("mediavid"); video.src = reader.result;
+   }
+   reader.readAsDataURL(event.target.files[0]);
+ }
+function loadlink() {
+   link = prompt("Enter Video Link");
+   document.getElementById("mediavid").src = link;
+}
+    </script>
+</html>

@@ -1,0 +1,108 @@
+<html><head><title>User 2 - Kaos 14</title>
+    <!--Scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"><script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="close.js"></script>
+    <script type="text/javascript" src="Settings.js"></script>
+    <link rel="stylesheet" href="darkmode.css" id="style">
+    </head>
+    <body id="body" style="cursor: auto;">
+    
+    
+    <div class="sidebar"></div>
+    <div class="sidebar2" id="Sidebar" style="display: flex;">
+    <button onclick="Closetestwindow2()" class="menubutton2"><img src="Icons/mememaker.png" style="height: 40px; width: 40px;"> Meme Maker</button>
+    <button onclick="Closetestwindow3()" class="menubutton2"><img src="Icons/notes.png" style="height: 40px; width: 40px;"> Notes</button>
+    <button onclick="Closetestwindow()" class="menubutton2"><img src="Icons/filesicon.png" style="height: 40px; width: 40px;"> Files</button>
+    <button onclick="Closetestwindow4()" class="menubutton2"><img src="Icons/media.png" style="height: 40px; width: 40px;"> Media</button>
+    <button onclick="Closetestwindow5()" class="menubutton2"><img src="Icons/Store.png" style="height: 40px; width: 40px;"> Store</button><div class="search">
+    <button style="width: 69%; border-radius: 0px; border: black solid 1px;">ㅤ</button>&nbsp;
+    <button style="width: 7%; background-color: #00d811; border: black solid 1px;" onclick="Closetestwindow6()">ㅤ</button>&nbsp;
+    <button onclick="Closetestwindow7()" style="width: 7%; background-color: #fff700; border: black solid 1px;">ㅤ</button>
+    &nbsp;<a href="index.html"><button style="width: 7%; background-color: #ff0000; border: black solid 1px;">ㅤ</button></a>
+    </div>
+    </div>
+    
+    
+    <!--Window-->
+    
+    <section style="height: 615px; ">
+        <h1 id="span" style="font-family: Inter; text-shadow: -1px -1px 0 white,-1px 0px 0 white,-1px 1px 0 white,0px -1px 0 white,0px 0px 0 white,0px 1px 0 white,1px -1px 0 white,1px 0px 0 white,1px 1px 0 white; z-index:-1; text-align: center;"> 14    50</h1>
+    
+    <div class="window" id="window">
+     <div class="header ui-draggable-handle"><button class="headertext"> Files Beta</button><button onclick="Closetestwindow()" class="closebutton">X</button></div>
+     <div class="content"><iframe src="medias/" width="600" height="450" style="border-radius: 0px 0px 5px 5px; border: black solid 0px; background-color: white;"></iframe></div></div>
+    
+    
+    <div class="window" id="window2">
+    <div class="header ui-draggable-handle"><button class="headertext"> Meme Maker</button><button onclick="Closetestwindow2()" class="closebutton">X</button></div>
+    <div class="content"><iframe src="" id="mememaker" width="600" height="450" style="border-radius: 0px 0px 5px 5px; border: black solid 0px;"></iframe></div></div>
+    
+    
+    <div class="window" id="window3">
+    <div class="header ui-draggable-handle"><button class="headertext"> Notes</button><button onclick="Closetestwindow3()" class="closebutton">X</button></div>
+    <div class="content"><textarea style="border-radius: 0px 0px 5px 5px; border: black solid 0px; width: 600; height: 450; resize: none; opacity: .95;"></textarea></div></div>
+    
+    
+    <div class="window" id="window4">
+    <div class="header ui-draggable-handle"><button class="headertext"> Media</button><button onclick="Closetestwindow4()" class="closebutton">X</button></div>
+    <div class="content"><iframe src="MEDIA.html" style="border-radius: 0px 0px 5px 5px; border: black solid 0px; width: 600; height: 450; resize: none;"></iframe></div></div>
+    
+    
+    <div class="window" id="window5">
+    <div class="header ui-draggable-handle"><button class="headertext"> Store</button><button onclick="Closetestwindow5()" class="closebutton">X</button></div>
+    <div class="content"><iframe src="https://zeankundev.github.io/KaOS-Store/" id="store" width="600" height="450" style="border-radius: 0px 0px 5px 5px; border: black solid 0px; background-color: white;"></iframe>
+    </div></div>
+    
+    
+    <div class="window" id="window7">
+    <div class="header ui-draggable-handle"><button class="headertext"> About</button><button onclick="Closetestwindow7()" class="closebutton">X</button></div>
+    <div class="content"><iframe src="version.html" width="600" height="450" style="border-radius: 0px 0px 5px 5px; border: black solid 0px; background-color: white;"></iframe>
+    </div></div>
+    
+    <div class="window" id="window6">
+    <div class="header ui-draggable-handle" id="header"><button class="headertext" style=""> Settings</button><button onclick="Closetestwindow6()" class="closebutton">X</button></div>
+    <div class="content" style="width: 600px;">
+        <div class="settingssidebar" style="width: 105.30px; float: left; height: 450px; border-radius: 0px 0px 0px 5px;">
+            <h4>🔐 Security</h4>
+            <br><h4>🎨 Themes</h4>
+            <br><h4>🕒 Time</h4>
+            <br><h4>❓ About</h4>
+            <br><h4>⚠️ Beta</h4>
+        </div>
+        <div class="Settings" style="background-color: white; float: right; width: 484.7px; height: 440px; padding: 5px; border-radius: 0px 0px 5px 0px;"><h3>Backgrounds</h3><br>
+    <button onclick="bg1()">Normal</button><br><br>
+    <button onclick="bg2()">City With Water</button><br><br>
+    <button onclick="bg3()">Flowers</button><br><br>
+    <button onclick="bg4()">Boardwalk</button><br><br>
+    <input type="file" accept="image/*" onchange="custom_bg(event)"><br><br>
+        <h3>Color Scheme</h3><br>
+        <button onclick="color1()">Reset Color</button><br><br>
+        <input type="color" id="color" style="height: 21px;"> <button onclick="getcolor()">Set</button><br><br>
+        <input id="cssimport" placeholder="Import WebDE/CSS"></input><button onclick="cssimport()">Import</button></div>
+    </div></div>
+    
+    </section>
+    
+    
+    <!--Footer-->
+    
+    <footer>
+<button onclick="menu()" class="menubutton" style="width: 50px; padding-top: 0px;" id="menutogglebutton"><img src="https://zeankundev.github.io/KaOS-13/logo.svg" style="height: 25px; width: 25px;"></img></button>&nbsp;
+<nav><ul id="footer">
+<li><button onclick="Closetestwindow2()" class="menubutton"><img src="Icons/mememaker.png" style="height: 25px; width: 25px;"></img></button></li>
+<li><button onclick="Closetestwindow3()" class="menubutton"><img src="Icons/notes.png" style="height: 25px; width: 25px;"></img></button></li>
+<li><button onclick="Closetestwindow()" class="menubutton"><img src="Icons/filesicon.png" style="height: 25px; width: 25px;"></img></button></li>
+    </ul></nav>
+    </footer>
+    
+    
+    
+    
+    <script>
+    $( ".window" ).draggable({ handle: ".header" });
+    </script>
+    <script type="text/javascript" src="time.js"></script>
+    
+    </body></html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<script src="fontawesome.js"></script>
+	<title>KasiusNet</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		.headerpart {
+			padding: 5px;
+			background: #1d1d1ddd;
+			backdrop-filter: blur(10px);
+		}
+		.headerpart button {
+			padding: 5px;
+			box-sizing: border-box;
+		}
+		input {
+			height: 23px;
+			box-sizing: border-box;
+			width: 708px;
+		}
+		iframe {
+			background-color: lightgrey;
+			border: none;
+			width: 800px;
+			height: 417px;
+			box-sizing: border-box;
+			position:fixed!important;
+    		z-index:2;
+		}
+button {
+   background: none;
+   border:none;
+   border-radius: 2.5px;
+   color: white;
+   transition: all 0.2s ease;
+   padding: 5px;
+}
+button:hover {
+   background: #4d4d4d90;
+   border:none;
+   border-radius: 2.5px;
+   transition: all 0.2s ease;
+}
+button:active {
+   background: #4d4d4d;
+   border:none;
+   border-radius: 2.5px;
+   transition: all 0.2s ease;
+}
+input {
+  background: none;
+  border-radius: 2.5px;
+  border:none;
+  padding: 2px;
+  transition: all 0.5s ease;
+  text-align: center;
+  color: white;
+  font-family: Inter;
+}
+input:focus {
+   background: lightgray;
+   border:none;
+   border-radius: 2.5px;
+   padding: 2px;
+   transition: all 0.5s ease;
+   text-align: center;
+   color: black;
+   outline: none;
+}
+	</style>
+</head>
+<body>
+<div class="headerpart">
+	<button onclick="home()"><i class="fa-solid fa-house"></i></button>
+	<button onclick="refresh()"><i class="fa-solid fa-arrow-rotate-right"></i></button>
+	<input autocomplete="off" placeholder="Enter A URL here..." id="input">
+	<button onclick="go()"><i class="fa-solid fa-arrow-right"></i></button>
+</div>
+<iframe src="" id="iframe"></iframe>
+</body>
+<script type="text/javascript">
+	function home() {
+		document.getElementById("iframe").src = "";
+	}
+	function refresh() {
+		document.getElementById("iframe").src = document.getElementById("iframe").src;
+	}
+	function go() {
+		let inputurl = document.getElementById("input").value;
+		document.getElementById("iframe").src = inputurl;
+	}
+</script>
+</html>

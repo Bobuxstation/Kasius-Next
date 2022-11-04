@@ -1,0 +1,312 @@
+<html>
+<head><title>User 1 - Kasius Next</title>
+<!--Scripts-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<script src="jqueryui2.js"></script>
+<script type="text/javascript" src="close.js"></script>
+<script type="text/javascript" src="Settings.js"></script>
+<link rel="stylesheet" href="style.css" id="style">
+<script src="fontawesome.js"></script>
+</head>
+<body id="body">
+
+<div id="errorbox">
+    <div id="errormessage">
+        <h2>An Error Has Occured!</h2>
+        <h4 id="errormessagetext">messagehere</h4>
+        <br><br><br><br>
+        <button onclick="hideerror()">OK</button>
+        <button onclick="shutdown.play(); setTimeout(function () {window.location.replace('index.html')}, 1000);">Log Out</button>
+    </div>
+</div>
+
+<div class="sidebar"></div>
+<div class="sidebar2" id="Sidebar">
+
+<div class="applist" style="width: 300px; margin-bottom: 2px; height: 485px; display: flex; flex-direction: column; float:left;">
+<button onclick="Closetestwindow2()" class="menubutton2"><img src="Icons/mememaker.png" style="height: 40px; width: 40px;"></img> Meme Maker</button>
+<button onclick="Closetestwindow3()" class="menubutton2"><img src="Icons/notes.png" style="height: 40px; width: 40px;"></img> Notes</button>
+<button onclick="Closetestwindow()" class="menubutton2"><img src="Icons/filesicon.png" style="height: 40px; width: 40px;"></img> Files</button>
+<button onclick="Closetestwindow4()" class="menubutton2"><img src="Icons/media.png" style="height: 40px; width: 40px;"></img> Media</button>
+<button onclick="Closetestwindow5()" class="menubutton2"><img src="Icons/Store.png" style="height: 40px; width: 40px;"> Store</img></button>
+<button onclick="browser()" class="menubutton2"><img src="Icons/browser.svg" style="height: 40px; width: 40px;"> KasiusNet</img></button>
+<button onclick="Closetestwindowtype()" class="menubutton2"><img src="kasiustype/logo.png" style="height: 40px; width: 40px;"> Kasius Type</img></button>
+</div>
+
+<div style="width: 300px; margin-bottom: 2px; height: 485px; display: flex; flex-direction: column; float:right;">
+<iframe style="height: 500px; border: none;" src="widgets.html"></iframe>
+</div>
+
+<div class="search">
+
+<button style="width: 12%; height: 22px; border-radius: 0px; border: black solid 0px; background-color: #717539;" onclick="NotificationMenu()"><i class="fa-solid fa-message"></i></button>
+
+<button style="width: 12%; background-color: #717539; border: black solid 0px; height: 22px;" onclick="Closetestwindow6()"><i class="fa-solid fa-gear"></i></button>
+
+<button onclick="Closetestwindow7()" style="width: 12%; height: 22px; background-color: #717539; border: black solid 0px;"><i class="fa-solid fa-circle-info"></i></button>
+
+<button onclick="shutdown.play(); setTimeout(function () {window.location.replace('index.html')}, 1000);" style="width: 12%; height: 22px; background-color: #717539; border: black solid 0px;"><i class="fa-solid fa-power-off"></i></button>
+</div>
+</div>
+
+<div class="notifications" id="Sidebar2">
+<h3 style="text-align: center;">Notifications Center</h3><br>
+<ul id="list" class="list">
+</ul>
+</div>
+<script type="text/javascript" src="notify.js"></script>
+
+
+<!--Window-->
+
+<section style="height: 615px; " id="section">
+    <h1 id="span" style=" text-shadow: -1px -1px 0 white,-1px 0px 0 white,-1px 1px 0 white,0px -1px 0 white,0px 0px 0 white,0px 1px 0 white,1px -1px 0 white,1px 0px 0 white,1px 1px 0 white; z-index:-1; text-align: center;">TIME</h1>
+
+<div style="display: none;" class="window" id="window">
+ <div class="header">
+    <button class="headertext"><i class="fa-solid fa-folder"></i> Files</button>
+    <button onclick="Closetestwindow()" class="closebutton"><i class="fa-solid fa-xmark"></i></button>
+    <button onclick="hide('window')" class="minimize"><i class="fa-solid fa-window-minimize"></i></button>
+</div>
+ <div class="content">
+    <iframe src="" id="file" width="600" height="450" style=" border: black solid 0px; background:none;"></iframe>
+</div>
+</div>
+
+
+<div style="display: none;" class="window" id="window2">
+<div class="header">
+    <button class="headertext"><i class="fa-solid fa-gamepad"></i> Meme Maker</button>
+    <button onclick="Closetestwindow2()" class="closebutton"><i class="fa-solid fa-xmark"></i></button>
+    <button onclick="hide('window2')" class="minimize"><i class="fa-solid fa-window-minimize"></i></button>
+</div>
+<div class="content">
+    <iframe src="" id="mememaker" width="600" height="450" style=" border: black solid 0px;"></iframe>
+</div>
+</div>
+
+
+<div style="display: none;" class="window" id="window3">
+<div class="header" style="width: 800px;">
+    <button class="headertext"><i class="fa-solid fa-book"></i></button>
+    <button class="headertext" onclick="showsave()">Save</button>
+    <button class="headertext" onclick="clearTXT()">New</button>
+    <button class="headertext" onclick="setTXT()">Formatting</button>
+    <button class="headertext" title="Kasius Next Notes v1.1">About</button>
+    <button onclick="Closetestwindow3()" class="closebutton"><i class="fa-solid fa-xmark"></i></button>
+    <button onclick="hide('window3')" class="minimize"><i class="fa-solid fa-window-minimize"></i></button>
+</div>
+<div class="content" style="width: 800px;">
+    <div id="notessaveprompt" style="height: 450px; box-sizing: border-box; display:none;transition: all 0.2s ease;padding:10px;position: fixed; z-index: 1;background-color: #1d1d1ddd; backdrop-filter: blur(5px);">
+        <details open><summary style="width: 191px;color: white; padding: 5px; font-weight: bold;margin-bottom: 5px;"><i class="fa-solid fa-file-signature"></i> File name</summary>
+        <input class="noteinput" style="padding: 5px;" id="filename" value="project.txt"></details><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <button class="kaosbutton" style="width: 100%; bottom: 0;" onclick="saveTXT(document.getElementById('filename').value)">Save File</button>
+        <br>
+        <button class="kaosbutton" style="width: 100%; bottom: 0;" onclick="showsave()">Close</button>
+    </div>
+    <div id="notessaveprompt1" style="width: 164; box-sizing: border-box;height: 450px; display: none; transition: all 0.2s ease 0s; padding: 10px; position: fixed; z-index: 1; background-color: rgba(29, 29, 29, 0.867); backdrop-filter: blur(5px); box-sizing: border-box;">
+        <details><summary style="color: white; font-weight: bold;margin-bottom: 5px;"><i class="fa-solid fa-text-height"></i> Text size</summary>
+        <input style="width: 100%; padding: 5px; border-radius: 3px;" type="range" min="0" max="100" value="20" onchange="document.getElementById('msg').style.fontSize = value"><br></details>
+        <details><summary style="color: white; font-weight: bold;margin-bottom: 5px;"><i class="fa-solid fa-paint-roller"></i> Text color</summary>
+        <input style="width: 100%; padding: 5px; border-radius: 3px;" type="color" onchange="document.getElementById('msg').style.color = value"></details>
+        <details><summary style="color: white; font-weight: bold;margin-bottom: 5px;"><i class="fa-solid fa-font"></i> Text font</summary>
+        <select style="background: lightgray; width: 100%; padding: 5px; border-radius: 3px;" id="font" onchange="fontTXT(value)">
+            <option style="font-family: Inter;">Inter</option>
+            <option style="font-family: Arial;">Arial</option>
+            <option style="font-family: Verdana;">Verdana</option>
+            <option style="font-family: Helvetica;">Helvetica</option>
+            <option style="font-family: Times New Roman;">Times New Roman</option>
+            <option style="font-family: Georgia;">Georgia</option>
+            <option style="font-family: Garamond;">Garamond</option>
+            <option style="font-family: Courier New;">Courier New</option>
+            <option style="font-family: Lucida Console;">Lucida Console</option>
+            <option style="font-family: Monaco;">Monaco</option>
+            <option style="font-family: Brush Script MT;">Brush Script MT</option>
+            <option style="font-family: Lucida Handwriting;">Lucida Handwriting</option>
+            <option style="font-family: Copperplate;">Copperplate</option>
+            <option style="font-family: Papyrus;">Papyrus</option>
+          </select></details><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+    <textarea id="msg" style="outline: none;border: black solid 0px; width: 800; height: 450; resize: none;"></textarea>
+</div>
+</div>
+
+
+<div style="display: none;" class="window" id="window4">
+<div class="header" style="width: 800px;">
+    <button class="headertext"><i class="fa-solid fa-photo-film"></i> Media</button>
+    <button onclick="Closetestwindow4()" class="closebutton"><i class="fa-solid fa-xmark"></i></button>
+    <button onclick="hide('window4')" class="minimize"><i class="fa-solid fa-window-minimize"></i></button>
+</div>
+<div class="content" style="width: 800px;">
+    <iframe width="800" height="450" src="" id="media" style=" border: black solid 0px; resize: none;"></iframe>
+</div>
+</div>
+
+
+<div style="display: none;" class="window" id="window5">
+<div class="header">
+    <button class="headertext"><i class="fa-solid fa-bag-shopping"></i> Store</button>
+    <button onclick="Closetestwindow5()" class="closebutton"><i class="fa-solid fa-xmark"></i></button>
+    <button onclick="hide('window5')" class="minimize"><i class="fa-solid fa-window-minimize"></i></button>
+</div>
+<div class="content">
+    <iframe src="" id="store" width="600" height="450" style=" border: black solid 0px; background-color: white;"></iframe>
+</div>
+</div>
+
+
+<div style="display: none;" class="window" id="window7">
+<div class="header">
+    <button class="headertext"><i class="fa-solid fa-circle-question"></i> About</button>
+    <button onclick="Closetestwindow7()" class="closebutton"><i class="fa-solid fa-xmark"></i></button>
+    <button onclick="hide('window7')" class="minimize"><i class="fa-solid fa-window-minimize"></i></button>
+</div>
+<div class="content">
+    <iframe src="version.html" width="600" height="450" style=" border: black solid 0px; background-color: white;"></iframe>
+</div>
+</div>
+
+<div style="display: none;" class="window" id="terminal">
+<div class="header">
+    <button class="headertext"><i class="fa-solid fa-gears"></i> Advanced Settings</button>
+    <button onclick="Closetestwindowterminal()" class="closebutton"><i class="fa-solid fa-xmark"></i></button>
+    <button onclick="hide('terminal')" class="minimize"><i class="fa-solid fa-window-minimize"></i></button>
+</div>
+<div class="content">
+<iframe id="terminalframe" src="" width="600" height="450" style=" border: black solid 0px; background-color: white;"></iframe>
+</div>
+</div>
+
+<div style="display: none;" class="window" id="type">
+<div class="header" style="width: 1200px;">
+    <button class="headertext"><i class="fa-solid fa-book"></i> Kasius Type</button>
+    <button onclick="Closetestwindowtype()" class="closebutton"><i class="fa-solid fa-xmark"></i></button>
+    <button onclick="hide('type')" class="minimize"><i class="fa-solid fa-window-minimize"></i></button>
+</div>
+<div class="content">
+    <iframe id="typeframe" src="" height="565" style=" border: black solid 0px; background-color: white; width: 1200px;"></iframe>
+</div>
+</div>
+
+<div style="display: none;" class="window" id="browser">
+<div class="header" style="width: 800px;">
+    <button class="headertext"><i class="fa-solid fa-network-wired"></i> KasiusNet</button>
+    <button onclick="browser()" class="closebutton"><i class="fa-solid fa-xmark"></i></button>
+    <button onclick="hide('browser')" class="minimize"><i class="fa-solid fa-window-minimize"></i></button>
+</div>
+<div class="content" style="width: 800px;">
+    <iframe id="browserframe" src="" width="800" height="450" style=" border: black solid 0px;"></iframe>
+</div>
+</div>
+
+<div style="display: none;" class="window" id="window6">
+<div class="header" id="header">
+    <button class="headertext"><i class="fa-solid fa-gear"></i> Settings</button>
+    <button onclick="Closetestwindow6()" class="closebutton"><i class="fa-solid fa-xmark"></i></button>
+    <button onclick="hide('window6')" class="minimize"><i class="fa-solid fa-window-minimize"></i></button>
+</div>
+<div class="content" style="width: 600px;">
+    <div class="settingssidebar" style="width: 105.30px; float: left; height: 450px; backdrop-filter: blur(1px); box-sizing: border-box; padding: 5px;">
+        <H4 style="padding:5px; margin-bottom: 5px;"><i class="fa-solid fa-gear"></i> General</H4>
+        <H4 style="padding:5px; margin-bottom: 5px;"><i class="fa-solid fa-palette"></i> Themes</H4>
+        <H4 style="padding:5px; margin-bottom: 5px;"><i class="fa-solid fa-clock"></i> Time</H4>
+        <h4 style="padding:5px; margin-bottom: 5px;"><i class="fa-solid fa-circle-question"></i> About</h4>
+        <h4 style="padding:5px; margin-bottom: 5px;" onclick="Closetestwindowterminal()"><i class="fa-solid fa-triangle-exclamation"></i> More</h4>
+    </div>
+<div class="Settings" style="background-color: lightgray; float: right; width: 484.7px; height: 440px; padding: 5px; opacity: .95; overflow: auto;">
+
+
+<fieldset>
+<legend>Background/Wallpaper</legend>
+<button onclick="bg1()">Normal</button><br><br>
+<button onclick="bg2()">City With Water</button><br><br>
+<button onclick="bg3()">Flowers</button><br><br>
+<button onclick="bg4()">Boardwalk</button><br><br>
+<button onclick="bg5()">Random</button><br><br>
+<input type="file" accept="image/*" onchange="custom_bg(event)">
+</fieldset>
+
+<fieldset>
+<legend>Color Scheme</legend>
+<button onclick="color1()">Reset Color</button><br><br>
+<input type="color" id="color" style="height: 21px;"> <button onclick="getcolor()">Set</button>
+</fieldset>
+
+<fieldset>
+<legend>Themes</legend>
+<button onclick="theme1()">Default</button><br><br>
+<input id="cssimport" placeholder="Import Theme"></input> <button onclick="cssimport()">Import</button>
+</fieldset>
+
+<fieldset>
+<legend>Footer</legend>
+<input id="changelogo" placeholder="Customize menu launch icon"></input> <button onclick="changelogo()">Change</button><br><br>
+<input type="checkbox" id="hidequicklaunch" onclick="hidequicklaunch()"> Hide quick launch icons</input><br><br>
+<button onclick="iconstyle1()">Left align icons</button>
+<button onclick="iconstyle2()">Center icons</button>
+</fieldset>
+
+<fieldset>
+<legend>Experimental</legend>
+<input id="notifybeta" placeholder="Write a notification"></input> <button onclick="notifybeta()">Notify</button>
+</fieldset>
+
+<fieldset>
+<legend>Updates</legend>
+<p>You Are Using The Latest Version!</p><br>
+<button>Check For Updates</button>
+</fieldset>
+</div>
+
+
+
+
+
+
+</section>
+
+
+<!--Footer-->
+
+<footer id="footer">
+<button onclick="menu()" class="menubutton" style="width: 35px; padding-top: 0px;" id="menutogglebutton"><img id="menutogglebuttonimg" src="https://zeankundev.github.io/KaOS-13/logo.svg" style="height: 24px; margin-top: 3px; width: 22.5px;"></img></button>
+<nav><ul id="footer">
+<li id="quicklaunch"><button onclick="Closetestwindow2()" class="menubutton"><img src="Icons/mememaker.png" style="height: 22.5px; width: 22.5px;"></img></button></li>
+<li id="quicklaunch1"><button onclick="Closetestwindow3()" class="menubutton"><img src="Icons/notes.png" style="height: 22.5px; width: 22.5px;"></img></button></li>
+<li id="quicklaunch2"><button onclick="Closetestwindow()" class="menubutton"><img src="Icons/filesicon.png" style="height: 22.5px; width: 22.5px;"></img></button></li>
+
+
+<li><button style="display: none;" onclick="show('window')" class="menubuttonminimized" id="minimizedfiles"><img src="Icons/filesicon.png" style="height: 22.5px; width: 22.5px;"></img></button></li>
+<li><button style="display: none;" onclick="show('window2')" class="menubuttonminimized" id="minimizedmeme"><img src="Icons/mememaker.png" style="height: 22.5px; width: 22.5px;"></img></button></li>
+<li><button style="display: none;" onclick="show('window3')" class="menubuttonminimized" id="minimizednotes"><img src="Icons/notes.png" style="height: 22.5px; width: 22.5px;"></img></button></li>
+<li><button style="display: none;" onclick="show('window4')" class="menubuttonminimized" id="minimizedmedia"><img src="Icons/media.png" style="height: 22.5px; width: 22.5px;"></img></button></li>
+<li><button style="display: none;" onclick="show('window5')" class="menubuttonminimized" id="minimizedstore"><img src="Icons/Store.png" style="height: 22.5px; width: 22.5px;"></img></button></li>
+<li><button style="display: none;" onclick="show('window7')" class="menubuttonminimized" id="minimizedabout"><i style="height: 22.5px; width: 22.5px;" class="fa-solid fa-circle-info"></i></button></li>
+<li><button style="display: none;" onclick="show('window6')" class="menubuttonminimized" id="minimizedsettings"><i style="height: 22.5px; width: 22.5px;" class="fa-solid fa-gear"></i></button></li>
+<li><button style="display: none;" onclick="show('terminal')" class="menubuttonminimized" id="minimizedterminal"><img src="Icons/terminal.png" style="height: 22.5px; width: 22.5px;"></img></button></li>
+<li><button style="display: none;" onclick="show('browser')" class="menubuttonminimized" id="minimizedbrowser"><img src="Icons/browser.svg" style="height: 22.5px; width: 22.5px;"></img></button></li>
+<li><button style="display: none;" onclick="show('type')" class="menubuttonminimized" id="minimizedtype"><img src="kasiustype/logo.png" style="height: 22.5px; width: 22.5px;"></img></button></li>
+</ul></nav>
+
+<button style="float: right;" onclick="NotificationMenu()" class="menubutton" style="width: 50px; padding-top: 0px;" id="menutogglebutton"><i style="height: 22.5px; width: 22.5px;" class="fa-solid fa-bars"></i></button>
+
+
+</footer>
+
+
+
+
+<script>
+$( ".window" ).draggable({
+	handle: ".header", 
+	containment: "#body",
+	opacity: 0.75
+});
+</script>
+<script type="text/javascript" src="note.js"></script>
+<script type="text/javascript" src="time.js"></script>
+</body>
+</html>
