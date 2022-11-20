@@ -18,7 +18,7 @@
 $('body').terminal({
   hello: function(name) {
     this.echo('Hello, ' + name +
-      '. Welcome To The KaOS Terminal 1.0.');
+      '. Welcome To The Kasius Next Terminal Version 1.0.');
   },
   add: function(num1, num2) {
     this.echo(parseInt(num1) + parseInt(num2));
@@ -132,7 +132,7 @@ $('body').terminal({
     } else if (cmd === 'hub') {
       this.echo('hub.dev');
     } else if (cmd === '--version') {
-      this.echo('OSRELKaOS1.0.0_R6392322936_D7293828329_S29613729');
+      this.echo('OSRELKASIUSNXT1.0.0_R6392322936_D7293828329_S29613729');
     } else if (cmd === '--license') {
       this.echo('GPL-3 License');
     }
@@ -154,8 +154,19 @@ $('body').terminal({
     this.echo('' );
     this.echo('Access Granted!' );
   },
+  taskmanager: function() {
+    this.echo('Kasius Next Task Manager');
+    this.echo('------------------------');
+    this.echo('Settings.js - Running');
+    this.echo('close.js - Running');
+    this.echo('fontawesome.js - Running');
+    this.echo('jqueryui2.js - Running');
+    this.echo('note.js - Running');
+    this.echo('notify.js - Running');
+    this.echo('time.js - Running');
+  },
   about: function() {
-    this.echo('KaOS 14 Html Terminal');
+    this.echo('Kasius Next Terminal');
     this.echo('Version 1.0');
     this.echo('(C) 2022 zeankun.dev & Bobuxstation');
   },
