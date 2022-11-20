@@ -146,15 +146,21 @@ $('body').terminal({
     this.echo('Succesfully pinged ' + name + ' 5 Times!' );
   },
   hack: function(name) {
+    this.echo('Pinged ' + name + ' In 69ms' );
     this.echo('Hacked Server 1 Of ' + name );
+    this.echo('Pinged ' + name + ' In 42ms' );
     this.echo('Hacked Server 2 Of ' + name );
+    this.echo('Pinged ' + name + ' In 76ms' );
     this.echo('Hacked Server 3 Of ' + name );
+    this.echo('Pinged ' + name + ' In 15ms' );
     this.echo('Hacked Server 4 Of ' + name );
+    this.echo('Pinged ' + name + ' In 95ms' );
     this.echo('Hacked Server 5 Of ' + name );
-    this.echo('' );
+    this.echo('------------------------');
     this.echo('Access Granted!' );
   },
   taskmanager: function() {
+    this.echo('------------------------');
     this.echo('Kasius Next Task Manager');
     this.echo('------------------------');
     this.echo('Settings.js - Running');
@@ -164,6 +170,7 @@ $('body').terminal({
     this.echo('note.js - Running');
     this.echo('notify.js - Running');
     this.echo('time.js - Running');
+    this.echo('------------------------');
   },
   about: function() {
     this.echo('Kasius Next Terminal');
