@@ -123,7 +123,6 @@ nav{
     text-align: center;
 }
 .applist {
-    background-color: #1d1d1dbb;
     color: white;
     border-radius: 5px 0px 0px 0px;
     padding: 5px;
@@ -135,7 +134,6 @@ nav{
 .search {
     bottom: 0;
     width: 100%;
-    background-color: #1d1d1d66;
     padding: 3px;
     box-sizing: border-box;
   border-radius: 2px;
@@ -144,7 +142,6 @@ nav{
 .search2 {
     width: 100%;
     box-sizing: border-box;
-    background-color: #4dc0ed66;
     padding: 3px;
     color: white;
     border-radius: 2px;
