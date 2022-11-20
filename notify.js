@@ -12,7 +12,7 @@ function notifications(msg) {
     var li = document.createElement("li");
     var br = document.createElement("br");
     li.classList.add('notification');
-    li.appendChild(document.createTextNode(msg));
+    li.innerHTML = msg;
     li.appendChild(br);
     ul.appendChild(br);
     ul.appendChild(br);
