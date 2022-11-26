@@ -14,13 +14,13 @@ function bg1() {
    document.getElementById("body").style.backgroundImage = "url(bg.jpg)";
 }
 function bg2() {
-   document.getElementById("body").style.backgroundImage = "url(citywater.png)";
+   document.getElementById("body").style.backgroundImage = "url(background/citywater.png)";
 }
 function bg3() {
-   document.getElementById("body").style.backgroundImage = "url(Flowers.png)";
+   document.getElementById("body").style.backgroundImage = "url(background/Flowers.png)";
 }
 function bg4() {
-   document.getElementById("body").style.backgroundImage = "url(Boardwalk.png)";
+   document.getElementById("body").style.backgroundImage = "url(background/Boardwalk.png)";
 }
 function bg5() {
    document.getElementById("body").style.backgroundImage = "url('https://source.unsplash.com/1600x900/?landscape')";
