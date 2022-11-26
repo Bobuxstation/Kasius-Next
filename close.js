@@ -10,7 +10,7 @@ function Closetestwindow() {
   if (x.style.display === "none") {
     document.getElementById("minimizedfiles").style.display = "block";
     x.style.display = "block";
-    var files = document.getElementById("file"); files.src = ("files.html");
+    var files = document.getElementById("file"); files.src = ("apps/files.html");
   } else {
     x.style.display = "none";
     document.getElementById("minimizedfiles").style.display = "none";
@@ -22,7 +22,7 @@ function Closetestwindow2() {
   if (x.style.display === "none") {
     document.getElementById("minimizedmeme").style.display = "block";
     x.style.display = "block";
-    var mememaker = document.getElementById("mememaker"); mememaker.src = ("mememaker.html");
+    var mememaker = document.getElementById("mememaker"); mememaker.src = ("apps/mememaker.html");
   } else {
     x.style.display = "none";
     document.getElementById("minimizedmeme").style.display = "none";
@@ -43,7 +43,7 @@ function Closetestwindow4() {
   var x = document.getElementById("window4");
   if (x.style.display === "none") {
     x.style.display = "block";
-    var medias = document.getElementById("media"); media.src = ("MEDIA.html");
+    var medias = document.getElementById("media"); media.src = ("apps/MEDIA.html");
     document.getElementById("minimizedmedia").style.display = "block";
   } else {
     x.style.display = "none";
@@ -102,7 +102,7 @@ function NotificationMenu() {
 function Closetestwindowterminal() {
   var x = document.getElementById("terminal");
   if (x.style.display === "none") {
-    document.getElementById("terminalframe").src = ("terminal.html");
+    document.getElementById("terminalframe").src = ("apps/terminal.html");
     document.getElementById("minimizedterminal").style.display = "block";
     x.style.display = "block";
   } else {
@@ -126,7 +126,7 @@ function Closetestwindowtype() {
 function browser() {
   var x = document.getElementById("browser");
   if (x.style.display === "none") {
-    document.getElementById("browserframe").src = ("kasiusnet.html");
+    document.getElementById("browserframe").src = ("apps/kasiusnet.html");
     document.getElementById("minimizedbrowser").style.display = "block";
     x.style.display = "block";
   } else {
