@@ -4,7 +4,7 @@
 OS simulator which used a similar layout.
 
   With a new and improved dark theme UI. Do daily task with the latest features from the improved apps of Kasius Next.
-Kasius Next also improves the ability to customize the user interface.
+Kasius Next also improves the ability to customize the user interface which opens up alot of possibilities for customization.
 
 This project is still in development. If you find bugs, Please report it to us.
 
