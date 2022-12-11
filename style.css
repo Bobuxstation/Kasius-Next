@@ -100,7 +100,7 @@ transition: all 0.2s ease;
     width: 32px !important;
     border-radius: 3px;
     padding: 4px !important;
-    margin: 3.5px;
+    margin: 4px;
     transition: all 0.2s ease;
 }
 li {
@@ -231,7 +231,7 @@ button {
     font-size: 20px;
     height: 32px;
     width: 32px;
-    margin: 3px;
+    margin: 4px;
     transition: all 0.2s ease;
     border-radius: 3px;
 }
