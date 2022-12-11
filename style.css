@@ -98,7 +98,7 @@ transition: all 0.2s ease;
     background-image:url("");
     height: 32px;
     width: 32px !important;
-    border-radius: 5px;
+    border-radius: 3px;
     padding: 4px !important;
     margin: 3.5px;
     transition: all 0.2s ease;
@@ -225,7 +225,7 @@ button {
   .menubuttonminimized {
     background-color: #8d8d8d80;
     border: black solid 0px;
-    color: black;
+    color: white;
     float: left;
     padding: 4px !important;
     font-size: 20px;
@@ -233,7 +233,7 @@ button {
     width: 32px;
     margin: 3px;
     transition: all 0.2s ease;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 .menubutton2:hover {
   background-color: #4d4d4d66;
