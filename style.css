@@ -96,11 +96,11 @@ transition: all 0.2s ease;
     color: black;
     float: left;
     background-image:url("");
-    height: 30px;
-    width: 30px;
+    height: 32px;
+    width: 32px !important;
     border-radius: 5px;
-    padding: 4px;
-    margin: 5px;
+    padding: 4px !important;
+    margin: 3.5px;
     transition: all 0.2s ease;
 }
 li {
@@ -229,9 +229,9 @@ button {
     float: left;
     padding: 4px !important;
     font-size: 20px;
-    height: 30px;
-    width: 30px;
-    margin: 5px;
+    height: 32px;
+    width: 32px;
+    margin: 3px;
     transition: all 0.2s ease;
     border-radius: 5px;
 }
@@ -501,4 +501,9 @@ textarea {
   color: black;
   font-family: inter;
   outline: none;
+}
+#menutogglebuttonimg {
+  height: 22.5px !important;
+  width: 22.5px !important;
+  margin: 0 !important;
 }
