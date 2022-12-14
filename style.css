@@ -18,8 +18,8 @@ footer {
   text-align: center;
   position:fixed!important;
   z-index:3;
-  border: #2d2d2d solid 1px;
-  border-width: 1px 0px 0px 0px;
+  border: 2px groove #2d2d2d;
+  border-width: 2px 0px 0px 0px;
 }
 .window {
     height: 0px;
@@ -160,7 +160,7 @@ nav{
     animation: slideup;
     margin-left:5px;
     animation-duration: 0.25s;
-    border: #2d2d2d solid 1px;
+    border: 2px groove #2d2d2d;
 }
 .menubutton2 {
     background: none;
@@ -194,7 +194,7 @@ button {
     margin-bottom: 45px;
     transition: all 0.2s ease;
     overflow: auto;
-    border: #2d2d2d solid 1px;
+    border: 2px groove #2d2d2d;
     margin-right:5px;
 }
 .list {
@@ -234,6 +234,8 @@ button {
     margin: 4px;
     transition: all 0.2s ease;
     border-radius: 3px;
+    border: 1px groove #8d8d8d80;
+    border-width: 1px 0px 0px 0px;
 }
 .menubutton2:hover {
   background-color: #4d4d4d66;
@@ -379,7 +381,7 @@ textarea {
 }
 @keyframes slideup {
     0% {
-          transform: translateY(25%);
+          transform: translateY(100%);
     }
     100% {
           transform: translateY(0%);
