@@ -10,7 +10,27 @@
     <body id="body" style="cursor: auto;">
     
     
-    <div class="sidebar"></div>
+    <div class="sidebar" style="background: black; color: white; padding: 15px; height: 100vh; position: absolute; z-index: 1000; width: 100%;">
+	[ <P STYLE="COLOR:LIME; DISPLAY: INLINE;">SYSTEM</P> ] PAGE SUCCESSFULLY LOADED<br><br>
+	[ <P STYLE="COLOR:RED; DISPLAY: INLINE;">ERR!!!</P> ] CANNOT FIND IMPORTANT SYSTEM FILES<br><br>
+	[ <P STYLE="COLOR:RED; DISPLAY: INLINE;">ERR!!!</P> ] FAILED TO START TIME SERVICE<br><br>
+	[ <P STYLE="COLOR:RED; DISPLAY: INLINE;">ERR!!!</P> ] FAILED TO START WINDOW MANAGER<br><br>
+	[ <P STYLE="COLOR:RED; DISPLAY: INLINE;">ERR!!!</P> ] CANNOT LOAD DEFAULT SETTINGS<br><br>
+	[ <P STYLE="COLOR:YELLOW; DISPLAY: INLINE;">WebDE-WARN</P> ] Cannot load default theme, System will use fallback theme<br><br>
+	[ <P STYLE="COLOR:RED; DISPLAY: INLINE;">ERR!!!</P> ] WebDE HAS FAILED TO LAUNCH<br><br>
+	[ <P STYLE="COLOR:YELLOW; DISPLAY: INLINE;">SYSTEM-WARN</P> ] ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------<br><br>
+	[ <P STYLE="COLOR:YELLOW; DISPLAY: INLINE;">SYSTEM-WARN</P> ] Kasius Next has ran into a problem and needs to restart. If you have experienced this problem multiple times, try to reinstall kasius next or log in as another user<br><br>
+	[ <P STYLE="COLOR:YELLOW; DISPLAY: INLINE;">SYSTEM-WARN ERROR-FACTORS</P> ] INACCESSIBLE-SYSTEM-FILES<br><br>
+	[ <P STYLE="COLOR:YELLOW; DISPLAY: INLINE;">SYSTEM-WARN</P> ] ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------<br><br>
+	[ <P STYLE="COLOR:YELLOW; DISPLAY: INLINE;">SYSTEM-WARN</P> ] PRESS [ <P STYLE="COLOR:lightgray; DISPLAY: INLINE;">RETURN</P> ] TO RETURN TO LOGIN MENU<br><br>
+    </div>
+    <script>
+document.addEventListener('keyup', function(event) {
+  if (event.keyCode == 13) {
+	window.location.href = "index.html";
+  }
+});
+    </script>
     <div class="sidebar2" id="Sidebar" style="display: flex;">
     <button onclick="Closetestwindow2()" class="menubutton2"><img src="Icons/mememaker.png" style="height: 40px; width: 40px;"> Meme Maker</button>
     <button onclick="Closetestwindow3()" class="menubutton2"><img src="Icons/notes.png" style="height: 40px; width: 40px;"> Notes</button>
