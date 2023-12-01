@@ -51,4 +51,4 @@ document
     }
   });
 
-weather.fetchWeather("jakarta");
+weather.fetchWeather("london");
