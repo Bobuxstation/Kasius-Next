@@ -76,7 +76,7 @@ function changelogo() {
   c = document.getElementById("changelogo").value;
   document.getElementById("menutogglebuttonimg").src = c;
   document.getElementById("menutogglebuttonimg").onerror = function(){
-    document.getElementById("menutogglebuttonimg").src = 'https://zeankundev.github.io/KaOS-13/logo.svg';
+    document.getElementById("menutogglebuttonimg").src = 'logo.svg';
     errorsound.play();
     error('Error: Image does not exist!');
   };
